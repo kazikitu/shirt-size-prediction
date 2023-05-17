@@ -10,7 +10,7 @@ height = st.number_input("Enter your height:", 1, 193)
 
 user_input = pd.DataFrame([[weight, age, height]], columns=["weight", "age", "height"])
 
-model = joblib.load('shirt-size-prediction/model.pkl')
+model = joblib.load('model.pkl')
 
 prediction = model.predict(user_input)
 
